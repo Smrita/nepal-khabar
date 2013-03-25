@@ -1,0 +1,190 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+    font-family: Old Newspaper;
+    src:url('http://localhost/nepal khabar/font/Old Newspaper Font.ttf'); 
+	
+	}
+	
+	@font-face
+	{
+		font=famile:Castle;
+	src:url('http://localhost/nepal khabar/font/Blackwood Castle.ttf');
+
+		}
+body
+{
+	background-image: url(../images/headera.jpg);
+}
+#navbar
+{
+	width:100%;
+	height:50px;
+	margin-top:-20px;
+		/*background-color:rgba( 0, 20, 20, 0.2);*/
+	background-color:#1F1F14;
+	/*background-color:black;*/
+	opacity:0.8;
+}
+
+#navbar ul
+{
+	list-style-type:none;
+	padding:0;
+	background-color:#FFF;
+	font-family:Old Newspaper;
+	font-size:  24px;
+	margin-left:8%;
+}
+
+#navbar ul li
+{
+	display:inline;
+	float:left;
+	width:10%;
+	text-align:center;
+	
+	margin:10px;
+	padding:5px;
+}
+ 
+#navbar ul li a{
+	 text-decoration:none;
+	 color:#FFF;
+	}
+
+#header
+{
+	width:100%;
+	height:100px;
+	background-color:rgba( #FFFF,0,0,0.5);
+		
+	
+}
+.topstoryTitle
+{
+	font-family:Old Newspaper;
+	background-color:#900;
+	color:#FFF; 
+	padding:5px; 
+	font-size:25px; 
+	text-align:center;
+}
+
+.topstoriesBorder
+{
+	border:1px solid #900;
+	background-color:#EBEBEB;
+}
+.topstories
+{
+
+	width:88%;
+	padding:10px;
+	border-bottom:1px solid #900;
+	margin-left:10px;
+		
+}
+
+.topstories img
+{
+	width:15;
+    height:10; 
+    margin-right:10px;	
+}
+.contentBox
+{
+    margin:0px auto;
+	width:80%;
+	min-height:700px;
+	margin:10px auto;
+  
+}
+
+.contentBox #content{
+	width:70%;
+	min-height:300px;
+	float:left;
+    
+	margin:5px;
+}
+	
+.contentBox #sideBar
+{   
+       float: left;
+    margin: 5px;
+    min-height: 350px;
+    padding-bottom: 50px;
+    padding-left: 18px;
+    padding-right: 9px;
+    width: 24%;
+		
+}	
+
+#content .singleNews
+{
+	height:300px;
+	width:100%;
+	background-color:#EBEBEB;
+	border:#333;
+	margin-bottom:20px;
+	
+}
+
+#content .imageContent
+{
+	height:300px;
+	width:40%;
+	padding:15px;
+
+
+}
+
+#content .imageContent img
+{
+	height:90%;
+	width:90%;
+}
+#content .imageDescription
+{
+	height:50px;
+	width:37%;
+	margin:10px;
+	background-color:black;
+	opacity:0.7;
+	color:#F00;
+	
+}
+
+.singleNews .imageSummary
+{
+	height:90%;
+	width:57%;
+	margin:15px;
+    float:right;
+	color:#FFF;
+	margin-top:-35%;
+	color:#333;
+	padding:10px;	
+	
+}
+
+#footer {
+    width:100%;
+	height:70px;
+	background-color:#1F1F14;
+	opacity:0.9;
+	position:fixed;
+	bottom: 0px;
+	margin-top:10px; 	
+}
+	
+#footerText
+{
+ text-align:center;
+ font-family:Old Newspaper;
+  
+   size:30px; 
+  margin-top:30px;
+  color:#FFF;
+}
