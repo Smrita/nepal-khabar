@@ -12,6 +12,13 @@
 <link href='http://fonts.googleapis.com/css?family=Rochester' rel='stylesheet' type='text/css' />
 <!--slider css jquery ends-->
 
+<!--
+-->
+		<link href='http://fonts.googleapis.com/css?family=Bree+Serif|Open+Sans+Condensed:700,300,300italic' rel='stylesheet' type='text/css'>
+        <!--link rel="stylesheet" type="text/css" href="css/demo.css" /-->
+        <link rel="stylesheet" type="text/css" href="Text animation/css/style2.css" />
+		<script src="Text animation/js/modernizr.custom.72111.js"></script>
+
 <link rel="stylesheet"  href="css/style.css" type="text/css"/>
 
 </head>
@@ -25,8 +32,8 @@
    <li> <a href="#">Economy</a></li>
    <li> <a href="#">Sports</a></li>
    <li> <a href="#">Technology</a></li>
-   <li> <a href="#">Culture</a></li>
-   <li> <a href="#">Entertainment</a></li>
-      <li> <a href="#">Contact Us</a></li>
+
+   <!--li> <a href="#">Entertainment</a></li-->
+
 
 </ul>

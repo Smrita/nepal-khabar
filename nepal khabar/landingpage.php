@@ -1,15 +1,21 @@
 
  <div id="navbar">
-          <?php include('/opt/lampp/htdocs/nepal khabar/menu.php'); ?>
+ 
+            <div id="logo"><img src="images/Logoo.jpg" style="float:left; margin-top:12px;"></div>
+         <div id="navContent" align="center"> <?php include('menu.php'); ?></div> 
+             
+    
   </div><!--end of nav bar-->
-  <div id="header">
-         <?php include('header.php'); ?>
+  <div id="header" >
+     <?php include('D:\xampp\htdocs\nepal khabar\Text animation\slider.php');?>
+  </div>
+         <!--?php include('header.php'); ?>
   </div><!--end of header-->
   
-  <div class="contentBox" style="width:90%;">      
-   
-     <div id="content" style="width:100%;" >
-      <?php include('landingPageContent.php');?>
+  <div class="contentBox">      
+  
+     <!--div id="content" style="width:100%;" >
+      <!?php include('landingPageContent.php');?>
       
       
      </div><!-- end of content-->
