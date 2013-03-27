@@ -83,12 +83,49 @@ body
 #header
 {
 	
-    height: 150px;
+    height: auto;
     margin: 0 auto 10px;
     width: 80%;
 		
 	
 }
+/*modification for slider*/
+h1 {
+	margin:0;
+	padding:50px 0 0;
+	font-size:40px;
+	font-weight:normal;
+	line-height:1.2em;
+	text-transform:uppercase;
+}
+h1 a, h1 a:hover {
+	color:#fff;
+	text-decoration:none;
+}
+h1 span {
+}
+h1 small {
+	display:block;
+	font-size:12px;
+	line-height:1.2em;
+	letter-spacing:normal;
+	text-transform:uppercase;
+	color:#fff;
+}
+
+.clr {
+	clear:both;
+	padding:0;
+	margin:0;
+	width:100%;
+	font-size:0;
+	line-height:0;
+}
+.slider {
+	padding:0;
+	background:no-repeat left bottom;
+}
+/*end of slider*/
 .topstoryTitle
 {
 	font-family:Old Newspaper;
@@ -124,7 +161,7 @@ body
 {
     margin:0px auto;
 	width:80%;
-	min-height:800px;
+	min-height:900px;
 	margin:10px auto;
 	position:relative;
 	
@@ -155,11 +192,10 @@ body
 
 #content .singleNews
 {
-	height:185px;
-	width:100%;
-	border-bottom:1px solid #999;
-	margin-bottom:-20px;
-	background-color:#F4F4F4;
+    border-bottom: 1px dotted  #D6D6D6;
+    height: 185px;
+    margin-bottom: 10px;
+    width: 100%;
 
 	
 }
@@ -171,6 +207,7 @@ body
     margin-top: -2%;
     padding: 5px;
     width: 24%;
+	box-shadow:0px 0px 1px 1px #999;
 
 }
 
