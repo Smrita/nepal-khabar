@@ -3,16 +3,16 @@
 @font-face {
 	
     font-family: Old Newspaper;
-    src:url('http://localhost/nepal khabar/nepal-khabar/nepal khabar/font/Old Newspaper Font.ttf');
+    src:url('./font/Old Newspaper Font.ttf');
 	
 	font-family:Castle;
-	src:url('http://localhost/nepal khabar/nepal-khabar/nepal khabar/font/Blackwood Castle.ttf');
+	src:url('./font/Blackwood Castle.ttf');
 	
 	font-family:CastleShadow;
-	src:url('http://localhost/nepal khabar/nepal-khabar/nepal khabar/font/BlackwoodCastleShadow.ttf');
+	src:url('./font/BlackwoodCastleShadow.ttf');
 
-    font-family:King;
-    src:url('http:localhost/nepal khabar/nepal-khabar/nepal khabar/font/Kingthings Spikeless.ttf');
+       font-family:King;
+       src:url('./font/Kingthings Spikeless.ttf');
  
 	
 	}
@@ -80,12 +80,13 @@ body
 	 color:#FFF;
 	}
 
-#header
+#sliderSpace
 {
 	
     height: auto;
-    margin: 0 auto 10px;
-    width: 80%;
+    margin: 50px auto ;
+    width: 100%;
+    background-color: black;
 		
 	
 }
@@ -161,7 +162,7 @@ h1 small {
 {
     margin:0px auto;
 	width:80%;
-	min-height:900px;
+	min-height:1500px;
 	margin:10px auto;
 	position:relative;
 	
@@ -267,4 +268,19 @@ h1 small {
 	width:100%;
 	height:200px;
 	
+}
+
+ #bottomcontent
+{
+    width:80%;
+    height:200px;
+    background-color:#FFF;
+    margin: 0px auto;
+}
+
+.bannerContent
+{
+    width:20px;
+    background-color:red;
+    height:200px;
 }
