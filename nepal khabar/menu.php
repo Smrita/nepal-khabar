@@ -17,9 +17,15 @@
 		<link href='http://fonts.googleapis.com/css?family=Bree+Serif|Open+Sans+Condensed:700,300,300italic' rel='stylesheet' type='text/css'>
         <!--link rel="stylesheet" type="text/css" href="css/demo.css" /-->
         <link rel="stylesheet" type="text/css" href="Text animation/css/style2.css" />
-		<script src="Text animation/js/modernizr.custom.72111.js"></script>
+		
 
 <link rel="stylesheet"  href="css/style.css" type="text/css"/>
+<link rel="stylesheet"  href="css/sideBar.css" type="text/css"/>
+
+<script src="Text animation/js/modernizr.custom.72111.js"></script>
+<!-- tabbed menu-->
+
+<script src="nepal-khabar/nepal khabar/js/jquery.js" type="text/javascript"></script>
 
 </head>
 
