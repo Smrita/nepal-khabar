@@ -2,22 +2,36 @@
 /* CSS Document */
 @font-face {
 	
-    font-family: Old Newspaper;
-    src:url('./font/Old Newspaper Font.ttf');
+    
 	
-	font-family:Castle;
-	src:url('./font/Blackwood Castle.ttf');
 	
-	font-family:CastleShadow;
-	src:url('./font/BlackwoodCastleShadow.ttf');
 
        font-family:King;
-       src:url('./font/Kingthings Spikeless.ttf');
- 
-	
-	}
-	
+       src:url('../font/Kingthings Spikeless.ttf');
+}
 
+@font-face {
+	       font-family:Catch;
+       src:url('../font/cachetona.ttf');
+}
+@font-face {
+	
+    font-family:Old Newspaper;
+    src:url('../font/Old Newspaper Font.ttf');}	
+	
+@font-face {
+	
+    font-family:Castle;
+	src:url('../font/Blackwood Castle.ttf');
+      
+	  }	
+
+@font-face {
+	
+	font-family:CastleShadow;
+	src:url('../font/BlackwoodCastleShadow.ttf');
+      
+	  }	
 body
 {
 	background-image: url(../images/headera.jpg);
@@ -59,7 +73,7 @@ body
 	list-style-type:none;
 	padding:0;
 	background-color:#FFF;
-	font-family:King;
+	
 	font-size:  24px;
 	/*margin-left:8%;*/
 }
@@ -68,7 +82,7 @@ body
 {
 	display:inline;
 	float:left;
-	width:10%;
+	width:210px;
 	text-align:center;
 	
 	margin:10px;
@@ -245,13 +259,16 @@ h1 small {
 }
 
 #footer {
-    width:100%;
-	height:30px;
+        width:100%;
+	height:40px;
 	background-color:#1F1F14;
 	opacity:0.9;
-    margin-top:-16px;
-	bottom:0px; 
-	
+        margin-top:-16px;
+        text-align: center;
+  
+    
+ 
+
 }
 	
 #footerText
@@ -270,17 +287,40 @@ h1 small {
 	
 }
 
- #bottomcontent
+ #bottomBannerContentSpace
 {
     width:80%;
     height:200px;
-    background-color:#FFF;
+  
     margin: 0px auto;
 }
 
 .bannerContent
 {
-    width:20px;
-    background-color:red;
-    height:200px;
+    width:385px;
+	float:right;
+    height:160px;
+  
+    margin:10px;
+    float: left;
+    padding: 10px;
+     
+}
+
+.bannerContentSmall
+{
+    width:230px;
+ 
+    height:160px;
+  
+    margin:10px;
+    float: left;
+    padding: 10px;
+  
+  
+    
+}
+
+.clr {
+   clear:both; 
 }
