@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Untitled Document</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet"  href="css/sideBar.css" type="text/css"/>
+        <link rel="stylesheet" type="text/css" href="css/coin-slider.css" />
+
+        <script type="text/javascript" src="js/cufon-yui.js"></script>
+        <script type="text/javascript" src="js/cufon-georgia.js"></script>
+        <script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+        <script type="text/javascript" src="js/coin-slider.min.js"></script>
+        <!-- tabbed menu-->
+
+
+    </head>
+
+    <body>
+
+        <div id="navbar">
+
+            <div id="logo"><img src="images/Logoo.jpg" style="float:left; margin-top:12px;"/></div>
+            <div id="navContent" align="center">
+                <ul>
+                    <li> <a href="#">Home</a></li>
+                    <li><a href="#">Politics</a></li>
+                    <li> <a href="#">Economy</a></li>
+                    <li> <a href="#">Sports</a></li>
+                    <li> <a href="#">Technology</a></li>
+                </ul>
+            </div> 
+        </div>
+        <div id ="mainbody">
+
+            <div class="contentDepth"> 
+                <div class="contentDepth_resize"> 
+                    <div class="mainbar"> 
+                        <div class="article"> 
+                            <h2>Title my tile my tile</h2>
+                            <div class="clr"></div>
+                            <p><span class="date">March 15, 2010</span> &nbsp;|
+                            </p>
+                            <img src="images/train.jpg" width="263" height="146" alt="" class="fl" />
+                            <p>The British government loses its appeal against a ruling that has 
+                                prevented it deporting radical cleric Abu Qatada to Jordan because 
+                                of fears he could face an unfair trial.</p>
+                            <p>Burma marks its Armed Forces Day with a military parade, 
+                                with opposition leader Aung San Suu Kyi in attendance for the first time.
+                                Burma marks its Armed Forces Day with a military parade, with opposition leader
+                                Aung San Suu Kyi in attendance for the first time.
+                            </p>
+                            <p>Ms Suu Kyi's presence is seen as a sign of improving ties with the military since her release from house arrest.
+                                Addressing the gathering, army chief General Min Aung Hlaing told troops the military would maintain a role in national politics.
+                                The event comes ongoing communal violence in central Burma.
+                                Armed Forces Day marks the 68th anniversary of Burma's uprising against Japanese rule.
+                                Over 6,000 troops were in attendance, as military jeeps and tanks took part in the parade in Burma's capital, Nay Pyi Taw.
+                                Aung San Suu Kyi's attendance is a striking symbol of the reconciliation between her and the institution that locked her
+                                and so many of her supporters up for many years, the BBC's South East Asia correspondent Jonathan Head reports.
+                                In the past she was a strident critic of the military's grip on Burma. Today she is making conspicuous efforts to build 
+                                good relations with the armed forces, which still hold an automatic quarter of the seats in parliament, our correspondent adds. </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="sideBar">
+
+                    <div id="sideBarContent">
+                        <h2 style="border-bottom:1px solid #CCC;" align="center">Most Read</h2>
+                        <div id="sideNavBar">
+                            <ul>
+                                <li><a href="#" id="tab1" class="selected">Politics</a></li>
+                                <li><a href="javascript:void(0);" id="tab2">Economy</a></li>
+                                <li><a href="javascript:void(0);" id="tab3">Sports</a></li>
+                                <li><a href="javascript:void(0);" id="tab4">Tech</a></li>
+
+                            </ul>
+                        </div>
+
+                        <div id="content">
+                            <p id="content_changer">You have selected Tab 1</p>
+
+                        </div>
+
+                    </div>
+
+                    <script type="text/javascript">
+                        $(document).ready(function() {
+                            $('#sideBarContent #sideNavBar ul a').click(function() {
+                                $('#sideBarContent #sideNavBar ul a').removeClass('selected');
+                                $(this).addClass('selected');
+                                if ($(this).html() === "Politics")
+                                {
+
+                                    $('#content_changer').html("<p><a href='#'>Obama reelected</a></p><p><a href='#'>A cat died.</a></p><p><a href='#'> xyz is arrested</a></p><p><a href='#'> will constitution ever be written? </a></p>");
+
+                                }
+                                if ($(this).html() === "Economy")
+                                {
+
+                                    $('#content_changer').html("<p><a href='#'>O </a></p><p><a href='#'>A cat died.</a></p><p><a href='#'> xyz is arrested</a></p><p><a href='#'> will constitution ever be written? </a></p>");
+
+                                }
+                            });
+                        });
+
+                    </script>
+
+                    <div id="sideBarContent">
+                        <h2 style="border-bottom:1px solid #CCC; text-align:left;">Related Videos</h2>
+  </div>
+                    </div>
+                </div><!--end of sidebar-->
+
+
+
+
+
+      
+        
+
+        <div id="bottomBanner">
+        </div><!--end of bottom banner-->
+
+
+        <div id="footer" >
+            <p id="footerText">Copyright©2013 nepalkhabar.com / All rights reserved</p>
+
+        </div><!--end of footer-->
+
+    </body>
+</html
