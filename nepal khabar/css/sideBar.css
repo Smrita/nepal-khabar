@@ -1,55 +1,45 @@
-@charset "utf-8";
-/* CSS Document */
 
 #sideNavBar
 {
-	width:100%;
-	height:50px;
-	margin-top:-20px;
+    width:100%;
+    height:50px;
+    margin-top:-20px;
 }
 
 
-#sideNavbar ul
+#sideNavBar ul
 {
-	list-style-type:none;
-	padding:0;
-	margin:10px;
-	margin-left:3px;
-	
-    
+    list-style-type: none;
+    padding:0;
+    margin:10px;
+    margin-left:3px;
 
-	/*margin-left:8%;*/
 }
 
-#sideNavbar ul li
+#sideNavBar ul li
 {
-	display:inline;
-	float:left;
-	width:60px;
-    padding:4px;
-    margin:4px;
+    display:inline;
+    /*float:left;*/
+    width:60px;
+    padding:1px;
+    margin:1px;
     text-align:center;
-	background-color:#C0C0C0;
-		
-	
+    background-color:#C0C0C0;
+
 }
 
-#sideNavbar ul li a
+#sideNavBar ul li a
 {
 
-	
-	color:#000;
-	display:block;
 
-	text-decoration:none;
-	/*
-	background:#ffd89b;
-	border-right:1px solid #f5ab36;
-	border-top:1px solid #f5ab36;
-	border-right:1px solid #f5ab36;*/
+    color:#000;
+    /*display:block;*/
+
+    text-decoration:none;
+    
 }
-#sideBarContent
+.sideBarContent
 {
-	width:100%;
-	height:297px;
+    width:100%;
+    height:297px;
 }

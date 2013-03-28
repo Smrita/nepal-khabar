@@ -1,7 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>Untitled Document</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <link href="css/style.css" rel="stylesheet" type="text/css" />
@@ -14,7 +13,27 @@
         <script type="text/javascript" src="js/script.js"></script>
         <script type="text/javascript" src="js/coin-slider.min.js"></script>
         <!-- tabbed menu-->
-        
+        <script type="text/javascript">
+                        $(document).ready(function() {
+                            $('.sideBarContent #sideNavBar ul a').click(function() {
+                                $('.sideBarContent #sideNavBar ul a').removeClass('selected');
+                                $(this).addClass('selected');
+                                if ($(this).html() === "Politics")
+                                {
+
+                                    $('#content_changer').html("<p><a href='#'>Obama reelected</a></p><p><a href='#'>A cat died.</a></p><p><a href='#'> xyz is arrested</a></p><p><a href='#'> will constitution ever be written? </a></p>");
+
+                                }
+                                if ($(this).html() === "Economy")
+                                {
+
+                                    $('#content_changer').html("<p><a href='#'>O </a></p><p><a href='#'>A cat died.</a></p><p><a href='#'> xyz is arrested</a></p><p><a href='#'> will constitution ever be written? </a></p>");
+
+                                }
+                            });
+                        });
+
+                    </script>
 
     </head>
 
@@ -152,14 +171,14 @@
                 </div><!-- end of content-->
                 <div class="sideBar">
 
-                    <div id="sideBarContent">
+                    <div class="sideBarContent">
                         <h2 style="border-bottom:1px solid #CCC;" align="center">Most Read</h2>
                         <div id="sideNavBar">
                             <ul>
                                 <li><a href="#" id="tab1" class="selected">Politics</a></li>
-                                <li><a href="javascript:void(0);" id="tab2">Economy</a></li>
-                                <li><a href="javascript:void(0);" id="tab3">Sports</a></li>
-                                <li><a href="javascript:void(0);" id="tab4">Tech</a></li>
+                                <li><a href="#" id="tab2">Economy</a></li>
+                                <li><a href="#" id="tab3">Sports</a></li>
+                                <li><a href="#" id="tab4">Tech</a></li>
 
                             </ul>
                         </div>
@@ -171,29 +190,9 @@
 
                     </div>
 
-                    <script type="text/javascript">
-                        $(document).ready(function() {
-                            $('#sideBarContent #sideNavBar ul a').click(function() {
-                                $('#sideBarContent #sideNavBar ul a').removeClass('selected');
-                                $(this).addClass('selected');
-                                if ($(this).html() === "Politics")
-                                {
+                    
 
-                                    $('#content_changer').html("<p><a href='#'>Obama reelected</a></p><p><a href='#'>A cat died.</a></p><p><a href='#'> xyz is arrested</a></p><p><a href='#'> will constitution ever be written? </a></p>");
-
-                                }
-                                if ($(this).html() === "Economy")
-                                {
-
-                                    $('#content_changer').html("<p><a href='#'>O </a></p><p><a href='#'>A cat died.</a></p><p><a href='#'> xyz is arrested</a></p><p><a href='#'> will constitution ever be written? </a></p>");
-
-                                }
-                            });
-                        });
-
-                    </script>
-
-                    <div id="sideBarContent">
+                    <div class="sideBarContent">
                         <h2 style="border-bottom:1px solid #CCC; text-align:left;">Related Videos</h2>
 
                     </div>
