@@ -1,11 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 
-ul li a {
-    color: dimgray;
 
-    text-decoration:none;
-}
 
 #sideNavBar
 {
@@ -76,10 +72,24 @@ ul li a {
     padding: 10px 20px;
     width: 85%;
 }
-
-.content_changer ul li a 
+.sideBar #sideBarContent ul li a
 {
-        text-align:left; 
-        text-decoration: none;	
-	size:20px;
+     text-decoration: none;
+    color:#1F1F14;
+}
+
+.sideBar #sideBarContent ul li a:hover
+{
+     color: #0000ff;
+}
+
+#content_changer  ul li a 
+{   
+    text-decoration: none;
+    color: #1F1F14;
+}
+#content_changer  ul li a:hover 
+{   
+  
+    color: #0000ff;
 }

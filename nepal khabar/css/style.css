@@ -116,7 +116,7 @@ body
 table
 {
     border-collapse:collapse;
-    color:gray;
+	
 }
 
 /*#sliderSpace
@@ -396,7 +396,7 @@ h1 small {
 }
 #content_left  ul
 {
-    list-style: cross-fade;
+    list-style: disc;
     float: left;
     
 }
@@ -556,8 +556,11 @@ h1 small {
     margin: 20px auto;
     padding: 10px;
     width: 95%;
-	font-size:18px;
+	
 	border-top:1px solid #999;
+font-family: 'Sintony',sans-serif;
+    font-size: 18px;
+   text-align: justify;
 
 }
 
@@ -570,6 +573,8 @@ h1 small {
 	float:left;
 	margin:15px;
 	box-shadow:2px 2px 4px white;
+        font-size: 15px;
+        text-align: justify;
 	
 }
 
