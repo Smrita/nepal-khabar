@@ -8,6 +8,7 @@ and open the template in the editor.
         <title>dashboard</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link type="text/css" rel="stylesheet" href="css/dbStyle.css"/>
+        <link type="text/css" rel="stylesheet" href="css/dbAllPost.css"/>
         <script src="../js/jquery-1.9.0.min.js"></script>
         <script>
             $(document).ready(function(){
@@ -26,6 +27,18 @@ and open the template in the editor.
                     if(displayValue == "none"){
                         $("#menuPart2").toggle("slow");
                     }
+                });
+            });
+        </script>
+        <script>
+            /*for edit and delete post*/
+            $(document).ready(function(){
+                $(".rowtr").hover(function(){
+                    var trId = $(this).attr("id");
+                    var id = $("#"+trId+" .rowAction").attr("id");
+                    $("#"+id).show();
+                }, function(){
+                    $(".rowAction").hide();
                 });
             });
         </script>

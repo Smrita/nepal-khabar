@@ -33,13 +33,13 @@ body{
 }
 #dbMain #dbBody #dbSideBar{
     width: 20%;
-    height: 500px;
+    min-height: 500px;
     background-color: #900;
     float: left;
 }
 #dbMain #dbBody #dbContent{
     width: 80%;
-    height: 500px;
+    min-height: 500px;
     background-color: #C0C0C0;
     float: right;
 }
