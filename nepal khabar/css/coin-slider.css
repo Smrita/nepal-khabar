@@ -7,7 +7,9 @@
 	overflow:hidden;
 	zoom:1;
 	position:relative;
-	float:right;
+	float:none;
+        width: 100%;
+        box-shadow:2px 2px 4px 4px #999999;
 }
 .coin-slider a {
 	text-decoration:none;

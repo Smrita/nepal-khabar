@@ -1,6 +1,49 @@
 @charset "utf-8";
 /* CSS Document */
+@font-face {
+       font-family:King;
+       src:url('../font/Kingthings Spikeless.ttf');
+}
 
+@font-face {
+	       font-family:Catch;
+       src:url('../font/cachetona.ttf');
+}
+@font-face {
+	
+<<<<<<< HEAD
+    font-family: Old Newspaper;
+    src:url('../font/Old Newspaper Font.ttf');
+	
+	font-family:Castle;
+	src:url('../font/Blackwood Castle.ttf');
+	
+	font-family:CastleShadow;
+	src:url('../font/BlackwoodCastleShadow.ttf');
+
+    font-family:King;
+    src:url('../font/Kingthings Spikeless.ttf');
+ 
+	
+	}
+=======
+    font-family:Old Newspaper;
+    src:url('../font/Old Newspaper Font.ttf');}	
+	
+@font-face {
+	
+    font-family:Castle;
+	src:url('../font/Blackwood Castle.ttf');
+      
+	  }	
+
+@font-face {
+>>>>>>> 58f362950caa9c75df63d22cff7a4f65e6579af9
+	
+	font-family:CastleShadow;
+	src:url('../font/BlackwoodCastleShadow.ttf');
+      
+	  }	
 body
 {
 	background-image:url(../images/headera.jpg);
