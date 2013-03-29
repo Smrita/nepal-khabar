@@ -1,32 +1,5 @@
 @charset "utf-8";
 /* CSS Document */
-@font-face {
-       font-family:King;
-       src:url('../font/Kingthings Spikeless.ttf');
-}
-
-@font-face {
-	       font-family:Catch;
-       src:url('../font/cachetona.ttf');
-}
-@font-face {
-	
-    font-family:Old Newspaper;
-    src:url('../font/Old Newspaper Font.ttf');}	
-	
-@font-face {
-	
-    font-family:Castle;
-	src:url('../font/Blackwood Castle.ttf');
-      
-	  }	
-
-@font-face {
-	
-	font-family:CastleShadow;
-	src:url('../font/BlackwoodCastleShadow.ttf');
-      
-	  }	
 body
 {
 	background-image:url(../images/headera.jpg);
@@ -38,7 +11,7 @@ body
 	margin-top:-20px;
 	font-family:'Patrick Hand SC', cursive;
 	/*background-color:rgba( 0, 20, 20, 0.2);*/
-	background-color:#9ECAD7;//#6BB7CE;//#00AFCE;//#9AC6D3;//#6BB7CE;//*#9AC6D3;/*#1F1F14;
+	background-color:#1F1F14;/*#037387;/*#9ECAD7;//#6BB7CE;//#00AFCE;//#9AC6D3;//#6BB7CE;//*#9AC6D3;/*#1F1F14;
 	/*background-color:black;*/
 	opacity:0.8;
 
@@ -86,10 +59,50 @@ body
  
 #navbar ul li a{
 	 text-decoration:none;
-	 color:white;//#005E7A;
+	 color:white;/*/#005E7A;*/
 	}
 
-#sliderSpace
+
+ #topContentHolder
+ {
+     width:100%;
+     /*margin:50px;*/
+     margin-left:0px;
+     margin-right: 0px;
+     height:450px;
+ }       
+ 
+ 
+        
+  #sliderSpace
+{
+	
+ background-color: black;
+    height: auto;
+    margin: 50px auto auto 5px;
+    width: 880px;
+		
+	
+}
+/* weather */
+.weatherContent{
+/*background-color: black;*/
+    float: right;
+    font-family: 'Patrick Hand',cursive;
+    margin: -391px 14px 5px;
+    min-height: 390px;
+    width: 28%;
+	border:1px dotted #CCC;
+    
+}
+.weatherContent .head {
+    
+    font-family:'Sintony', sans-serif;
+    font-size:17px;
+    /*background:rgba(39,191,173,0.1);/*(154,198,211,0.2);*/
+    
+}      
+/*#sliderSpace
 {
 	
     height: auto;
@@ -98,7 +111,7 @@ body
     background-color: black;
 		
 	
-}
+}*/
 /*modification for slider*/
 h1 {
 	margin:0;
@@ -146,33 +159,29 @@ h1 small {
 	text-align:center;
 }
 
-.topstoriesBorder
-{
-	border:1px solid #900;
-	background-color:#EBEBEB;
-}
-.topstories
-{
 
-	width:88%;
-	padding:10px;
-	border-bottom:1px solid #900;
-	margin-left:10px;
-		
+/*.newsContentBoxx
+{
+	margin:110px;
+	width:80%;
+	min-height:3000px;
+	margin: 100px auto;
+	position:relative;
 }
 
-.topstories img
+.newsContentBoxx #newsContentt
 {
-	width:5;
-    height:8; 
-    margin-right:10px;	
-}
+	width:70%;
+	min-height:2000px;
+	float:left;
+  	margin:5px;
+}*/
 .contentBox
 {
-    margin:0px auto;
+        margin:110px;
 	width:80%;
-	min-height:1500px;
-	margin:10px auto;
+	min-height:2123px;
+	margin: 100px auto;
 	position:relative;
 	
 	
@@ -182,45 +191,94 @@ h1 small {
 
 .contentBox #content{
 	width:70%;
-	min-height:300px;
+	min-height:1500px;
 	float:left;
-    
-	margin:5px;
+    margin:5px;
 }
 	
 .contentBox .sideBar
 {   
-       float: left;
-    margin: 5px;
+    
+     /*float: left;
+    font-family: 'Patrick Hand',cursive;
+    margin: -16px 2px 7px 5px;
     min-height: 350px;
     padding-bottom: 50px;
-    padding-left: 18px;
-    padding-right: 9px;
-    width: 24%;
-    margin-top:0px;
-    font-family:'Patrick Hand', cursive;
+    padding-right: 0;
+    width: 28%;*/
+	
+	    float:right;
+    height:800px;
+    width:28%;
 		
 }	
+#content .firstCol
+{
+    /*border-bottom: 1px dotted  #D6D6D6;
+    width:90%;
+    padding:10px;
+    height:230px;
+    font-family:'Sintony', sans-serif;
+    font-size:17px;
+   /* background:rgba(154,198,211,0.2);*/
+   /*border:1px solid #CCC;
+    margin:10px;*/
+	
+	border: 1px solid #D6D6D6;
+    height: 387px;
+    margin-bottom: 10px;
+    margin-top: 18px;
+    padding: 10px 20px;
+    width: 85%;
+}
+
+#content .singleLandNews
+{
+      /*background: none repeat scroll 0 0 rgba(154, 198, 211, 0.1);*/
+    border-bottom: 1px dotted #D6D6D6;
+    /*border-radius: 2em 2em 2em 2em;*/
+    float: left;
+    font-family: 'Sintony',sans-serif;
+    font-size: 15px;
+    height: 185px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    width: 100%;
+}
 
 #content .singleNews
 {
-    border-bottom: 1px dotted  #D6D6D6;
+    
+     border-bottom: 1px dotted  #D6D6D6;
     height: 185px;
     margin-bottom: 10px;
     width: 100%;
     font-family:'Sintony', sans-serif;
     font-size:17px;
-    background:rgba(39,191,173,0.1);/*(154,198,211,0.2);*/
+    
 }
 
 #content .imageContent
 {
 	height: 120px;
     margin-left: 1px;
-    margin-top: -2%;
+    margin-top: 2%;
     padding: 5px;
     width: 24%;
 	box-shadow:0px 0px 1px 1px #999;
+	float:left;
+
+}
+
+#content .imageContentRight
+{
+	height: 120px;
+    margin-left: 1px;
+    margin-top: 2%;
+    padding: 5px;
+    width: 24%;
+	box-shadow:0px 0px 1px 1px #999;
+	float:right;
 
 }
 
@@ -246,19 +304,93 @@ h1 small {
 	height:100px;
 	width:70%;
 	position:relative;
-     float:right;
-	margin-top:-14%;
+    float:right;
+	margin-top:-2%;
 	color:#333;
 	padding:5px;
+	text-align:justify;
+	
+}
+
+#content .imageLandContent
+{
+    box-shadow: 0 0 1px 1px #999999;
+    height: 104px;
+    margin-left: 25px;
+    margin-top: -2%;
+    padding: 5px;
+    width: 20%;
+	float:left;
+
+}
+
+#content .imageLandContent img
+{
+	height:100%;
+	width:100%;
+}
+
+#content .imageLandDescription
+{
+	height:50px;
+	width:37%;
+	margin:10px;
+	
+	opacity:0.7;
+	color:#F00;
+	
+}
+
+.singleLandNews .imageLandSummary
+{
+	height:100px;
+	width:70%;
+	position:relative;
+        float:right;
+	margin-top:-5%;
+	color:#333;
+	padding:5px;
+        
 	
 	
 	
 }
 
+.singleLandNews .headingFormat
+{
+	text-align:left;
+ 
+	margin-bottom:20px;
+
+	
+	size:20px;
+
+}
+
+
+#content_left
+{
+    float:left;
+    height:800px;
+    width:38%;
+    /*background-color:rgba(154, 198, 211, 0.1);*/
+    
+    
+}
+
+#content_middle
+{
+    float:left;
+    height:800px;
+    width:60%;
+    /*background-color:rgba(154, 198, 211, 0.1);*/
+    
+    
+}
 #footer {
         width:100%;
 	height:40px;
-	background-color:#037387;/*//#6BB7CE;//#6D7989;/*#1F1F14;*/
+	background-color:#1F1F14;/*#037387;/*//*#6BB7CE;//#6D7989;/*#1F1F14;*/
 	opacity:0.9;
         margin-top:-16px;
         text-align: center;
@@ -279,7 +411,7 @@ h1 small {
 
 #bottomBanner
 {
-	background-color:#9ECAD7;/*#6BB7CE;//#00AFCE;//#9AC6D3;//#6BB7CE;//#9AC6D3;//#1F1F14;*/
+	background-color:#1F1F14;/*#9ECAD7;/*#6BB7CE;//#00AFCE;//#9AC6D3;//#6BB7CE;//#9AC6D3;//#1F1F14;*/
 	width:100%;
 	height:200px;
     font-family:'Patrick Hand SC', cursive;
@@ -299,7 +431,6 @@ h1 small {
     width:385px;
 	float:right;
     height:160px;
-  
     margin:10px;
     float: left;
     padding: 10px;
@@ -322,4 +453,159 @@ h1 small {
 
 .clr {
    clear:both; 
+}
+
+/*Specific news template*/
+
+#topContentVideoHolder
+ {
+     width:100%;
+     /*margin:50px;*/
+     margin-left:0px;
+     margin-right: 0px;
+     height:600px;
+ }
+#newsTitle
+{
+
+    font-size: 36px;
+    height: 40px;
+    margin: 5px auto;
+    padding: 10px;
+    text-align: center;
+    width: 95%;
+	font-family:'Patrick Hand SC', cursive;
+	
+}
+
+#author
+{
+	
+	height:18px;
+	font-size:18px;
+	margin:0px auto;
+	padding:10px;
+	text-align:left;
+	width:95%;
+	font-family:'Patrick Hand', cursive;
+}
+
+#datee
+{
+
+	height:18px;
+	font-size:18px;
+	margin:0px auto;
+	padding:10px;
+	text-align:left;
+	width:95%;
+	font-family:'Patrick Hand', cursive;
+	border-bottom:1px solid gray;
+}
+
+#video
+{
+	
+    height: 400px;
+    margin: 20px auto;
+    padding: 0px;
+    width: 88%;
+	box-shadow: 1px 3px 3px #000;
+	
+	
+}
+
+#news
+{
+    min-height: 900px;
+    margin: 20px auto;
+    padding: 10px;
+    width: 95%;
+	font-size:18px;
+	border-top:1px solid #999;
+
+}
+
+#newsHighlights
+{
+	width:200px;
+	height:300px;
+	background-color:#EFEFEF;
+	padding:10px;
+	float:left;
+	margin:15px;
+	box-shadow:2px 2px 4px white;
+	
+}
+
+#newsImage
+{
+     width:200px;
+	height:200px;
+	
+	padding:10px;
+    float:right;
+	margin:15px;
+	box-shadow:2px 3px 4px black;
+	/*z-index:9999;	*/
+}
+
+#socialTools
+{
+	width:95%;
+	padding:10px;
+	margin:20px auto;
+
+	height:35px;
+}
+
+.sharee
+{
+        border:1px solid #CCC;
+    float: left;
+    height: 40px;
+    margin: 1px;
+    width: 32%;
+	border:1px solid #CCC;
+	
+}
+
+#comment
+{
+	width:95%;
+	height:400px;
+
+	margin:20px auto;
+	padding:10px;
+		
+}
+
+#writeAcomment
+{
+
+    font-size: 36px;
+    height: 40px;
+    margin: 5px auto;
+    padding: 10px;
+    text-align: center;
+    width: 95%;
+	font-family:'Patrick Hand SC', cursive;
+
+	
+}
+
+#commentBox
+{
+    background-color:white;
+	box-shadow:1px 1px 2px black;
+    font-size: 36px;
+    height: 200px;
+    margin: 10px auto;
+    padding: 0px;
+    text-align: center;
+    width: 95%;
+
+	font-family:'Patrick Hand', cursive;
+	
+	
 }

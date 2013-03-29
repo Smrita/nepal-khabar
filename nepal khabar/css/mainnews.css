@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* CSS Document */
+
+.newsContentBoxx
+{
+	margin:110px;
+	width:80%;
+	min-height:3000px;
+	margin: 100px auto;
+	position:relative;
+}
+
+.newsContentBoxx #newsContentt
+{
+	width:70%;
+	min-height:2000px;
+	float:left;
+  	margin:5px;
+}
