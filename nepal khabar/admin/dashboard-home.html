@@ -1,0 +1,77 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>dashboard</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link type="text/css" rel="stylesheet" href="css/dbStyle.css"/>
+        <link type="text/css" rel="stylesheet" href="css/dbHome.css"/>
+        <script src="../js/jquery-1.9.0.min.js"></script>
+        <script src="js/default.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#menuPart1").show();
+            });
+        </script>
+        <script>
+            /*for delete comment*/
+            $(document).ready(function(){
+                $(".rowAction").hover(function(){
+                    var id = $(this).attr("id");
+                    $("#"+id+" a").show();
+                }, function(){
+                    $(".rowAction a").hide();
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div id="dbMain">
+            <div id="dbHeader">Nepal Khabar</div>
+            <div id="dbBody">
+                <div id="dbSideBar">
+                    <ul>
+                        <li class="menu" id="menu1">Dashboard
+                            <ul class="menuPart" id="menuPart1">
+                                <li><a href="dashboard-home.html">Home</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu" id="menu2">Posts
+                            <ul class="menuPart" id="menuPart2">
+                                <li><a href="dashboard-allpost.html">All Posts</a></li>
+                                <li><a href="dashboard-add.html">Add New</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu" id="menu3"><a href="dashboard-comment.html">Comments</a></li>
+                    </ul>
+                </div>
+                <div id="dbContent">
+                    <strong>&nbsp; Home</strong><br/><br/>
+                    <div class="homeSubContent" id="total">
+                        <p class="homeHeading">Total</p>
+                        <label>100 posts</label><label>4 comments</label>
+                    </div>
+                    <div class="homeSubContent" id="rComment">
+                        <p class="homeHeading">Recent Comments</p>
+                        <div id="rc">
+                            <div class="rowAction" id="ra1">
+                                <p>From user1 on Post1</p>
+                                <p>this is comment1</p>
+                                <a href="#">Delete</a>
+                            </div>
+                            <div class="rowAction" id="ra2">
+                                <p>From user2 on Post2</p>
+                                <p>this is comment2</p>
+                                <a href="#">Delete</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="dbFooter"></div>
+        </div>
+    </body>
+</html>

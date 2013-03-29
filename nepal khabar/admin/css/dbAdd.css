@@ -1,0 +1,31 @@
+/* 
+    Document   : dbAdd
+    Created on : Mar 29, 2013, 7:26:38 PM
+    Author     : ramsharan
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+#post{
+    margin: 10px;
+}
+
+#post label{
+    font-size: 20px;
+}
+#post #title{
+    width: 70%;
+    height: 20px;
+}
+#post #author{
+    width: 70%;
+    height: 20px;
+}
+#post span{
+    font-size: 15px;
+}
+#post #textContent{
+    width: 70%;
+    height: 200px;
+    resize: vertical;
+}
