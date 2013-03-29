@@ -1,0 +1,56 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>allpost</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="../js/jquery-1.9.0.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $(".rowtr").hover(function(){
+                    var trId = $(this).attr("id");
+                    var id = $("#"+trId+" .rowAction").attr("id");
+                    $("#"+id).show();
+                }, function(){
+                    $(".rowAction").hide();
+                });
+            });
+        </script>
+        <style>
+            .rowAction{
+                display: none;
+            }
+            .rowtr td{
+                height: 50px;
+                width: 100px;
+                background-color: yellowgreen;
+                vertical-align: top;
+            }
+            table{
+                text-align: left;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="allPost">
+            <table>
+                <thead><tr><th id="title">Title</th><th id="author">Author</th><th id="category">Category</th></tr></thead>
+                <!--<tfoot><tr><th id="title">Title</th><th id="author">Author</th><th id="category">Category</th></tr></tfoot>-->
+                <tbody><tr class="rowtr" id="tr1"><td><strong>title1</strong>
+                            <div class="rowAction" id="ra1">
+                                <a href="edit.html">Edit</a><a href="">Delete</a>
+                            </div></td>
+                        <td>author1</td><td>category1</td></tr>
+                    <tr class="rowtr" id="tr2"><td><strong>title2</strong>
+                            <div class="rowAction" id="ra2">
+                                <a href="edit.html">Edit</a><a href="">Delete</a>
+                            </div></td>
+                        <td>author1</td><td>category1</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

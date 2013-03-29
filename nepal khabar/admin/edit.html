@@ -1,0 +1,43 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link type="text/css" rel="stylesheet" href="css/postStyle.css"/>
+        <style>
+            textarea{
+                width: 500px;
+                resize: vertical;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="post">
+            <form method="post" action="">
+                <p>
+                    <label>Add New Post</label><br/>
+                    <input id="title" type="text" name="title" value="It is original title"/>
+                </p>
+                <p>
+                    <textarea id="textContent" name="textContent">this is content part</textarea>
+                </p>
+                <p><label>Choose Category</label> 
+                    <select name="category">
+                        <option value="entertainment">Entertainment</option>
+                        <option value="politics">Politics</option>
+                        <option value="entertainment">Entertainment</option>
+                        <option value="entertainment">Entertainment</option>
+                    </select>
+                </p>
+                <p>
+                    <input type="submit" name="submit" value="Save as Draft"/>
+                    <input type="submit" name="submit" value="Publish"/>
+                </p>
+            </form>
+        </div>
+    </body>
+</html>
