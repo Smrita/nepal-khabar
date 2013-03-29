@@ -1,6 +1,12 @@
 @charset "utf-8";
 /* CSS Document */
 
+ul li a {
+    color: dimgray;
+
+    text-decoration:none;
+}
+
 #sideNavBar
 {
 	width:100%;
@@ -34,14 +40,19 @@
 	
 }
 
-#sideNavbar ul li a
+#sideNavBar ul li a
 {
 
 	
-	color:#000;
-	display:block;
+	
+	text-align:left; text-decoration: none;
+ 
+	margin-bottom:20px;
 
-	text-decoration:none;
+	
+	size:20px;
+        /*text-decoration:blink;*/
+        
 	/*
 	background:#ffd89b;
 	border-right:1px solid #f5ab36;
@@ -64,4 +75,11 @@
     margin-top: 21px;
     padding: 10px 20px;
     width: 85%;
+}
+
+.content_changer ul li a 
+{
+        text-align:left; 
+        text-decoration: none;	
+	size:20px;
 }
