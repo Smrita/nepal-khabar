@@ -1,0 +1,26 @@
+/* 
+    Document   : loginStyle
+    Created on : Mar 28, 2013, 11:11:26 AM
+    Author     : ramsharan
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+#loginMain{
+    margin:auto;
+    width: 250px;
+/*    border-color: red;
+    border: 2px;
+    border-style: solid;*/
+}
+#loginBody{
+    
+}
+#loginBody p input{
+    width: 200px;
+}
+#submitButton{
+    width: 50px;
+    float: right;
+    margin-right: 45px;
+}

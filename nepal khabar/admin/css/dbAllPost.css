@@ -1,0 +1,30 @@
+/* 
+    Document   : dbAllPost
+    Created on : Mar 29, 2013, 9:35:39 PM
+    Author     : ramsharan
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+.rowAction{
+    display: none;
+}
+.rowtr td{
+    height: 50px;
+    width: 100px;
+    background-color: #D0D0D0;
+    vertical-align: top;
+}
+table{
+    text-align: left;
+    width: 100%;
+}
+.rowAction a{
+    display: inline-block;
+    width: 70px;
+    text-decoration: none;
+}
+#allPost{
+    margin: 10px;
+}
+
