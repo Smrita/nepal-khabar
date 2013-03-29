@@ -12,7 +12,7 @@
 .rowtr td{
     height: 50px;
     width: 100px;
-    background-color: yellowgreen;
+    background-color: #D0D0D0;
     vertical-align: top;
 }
 table{
@@ -23,5 +23,8 @@ table{
     display: inline-block;
     width: 70px;
     text-decoration: none;
+}
+#allPost{
+    margin: 10px;
 }
 

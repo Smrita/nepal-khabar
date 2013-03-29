@@ -41,8 +41,8 @@ body{
 }
 #dbSideBar ul{
     list-style-type: none;
-    margin: 0px;
-    padding: 0px;
+    margin: 2px;
+    padding: 2px;
 }
 #dbSideBar ul li ul{
     display: none;
@@ -60,7 +60,7 @@ body{
     background-color: #E0E0E0;
 }
 .menuPart li{
-    font-size: 13px;
+    font-size: 14px;
 }
 .mSelected{
     background-color: grey;

@@ -12,20 +12,21 @@ and open the template in the editor.
         <script src="../js/jquery-1.9.0.min.js"></script>
         <script>
             $(document).ready(function(){
+                    $("#menuPart2").show();
                 $("#menu1").click(function(){
                     displayValue = $("#menuPart1").css("display");
-                    $(".menuPart").hide("slow");
+                    $(".menuPart").hide();
                     
                     if(displayValue == "none"){
-                        $("#menuPart1").toggle("slow"); 
+                        $("#menuPart1").toggle(); 
                     }
                     
                 });
                 $("#menu2").click(function(){
                     displayValue = $("#menuPart2").css("display");
-                    $(".menuPart").hide("slow");
+                    $(".menuPart").hide();
                     if(displayValue == "none"){
-                        $("#menuPart2").toggle("slow");
+                        $("#menuPart2").toggle();
                     }
                 });
             });
@@ -65,6 +66,7 @@ and open the template in the editor.
                 </div>
                 <div id="dbContent">
                     <div id="allPost">
+                        <strong>Posts</strong><br/><br/>
                         <table>
                             <thead><tr><th id="title">Title</th><th id="author">Author</th><th id="category">Category</th></tr></thead>
                             <tbody><tr class="rowtr" id="tr1"><td><strong>title1</strong>

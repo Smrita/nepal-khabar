@@ -14,18 +14,18 @@ and open the template in the editor.
             $(document).ready(function(){
                 $("#menu1").click(function(){
                     displayValue = $("#menuPart1").css("display");
-                    $(".menuPart").hide("slow");
+                    $(".menuPart").hide();
                     
                     if(displayValue == "none"){
-                        $("#menuPart1").toggle("slow"); 
+                        $("#menuPart1").toggle(); 
                     }
                     
                 });
                 $("#menu2").click(function(){
                     displayValue = $("#menuPart2").css("display");
-                    $(".menuPart").hide("slow");
+                    $(".menuPart").hide();
                     if(displayValue == "none"){
-                        $("#menuPart2").toggle("slow");
+                        $("#menuPart2").toggle();
                     }
                 });
             });
@@ -65,6 +65,7 @@ and open the template in the editor.
                 </div>
                 <div id="dbContent">
                     <div id="allPost">
+                        <strong>Comments</strong><br/><br/>
                         <table>
                             <thead><tr><th id="author">Author</th><th id="comment">Comment</th><th id="post">Post</th></tr></thead>
                             <!--<tfoot><tr><th id="title">Title</th><th id="author">Author</th><th id="category">Category</th></tr></tfoot>-->
