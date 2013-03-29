@@ -27,5 +27,5 @@
 #post #textContent{
     width: 70%;
     height: 120px;
-    resize: none;
+    resize: vertical;
 }

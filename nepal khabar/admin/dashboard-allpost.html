@@ -45,38 +45,36 @@ and open the template in the editor.
     </head>
     <body>
         <div id="dbMain">
-            <div id="dbHeader"></div>
+            <div id="dbHeader">Nepal Khabar</div>
             <div id="dbBody">
                 <div id="dbSideBar">
                     <ul>
                         <li class="menu" id="menu1">Dashboard
                             <ul class="menuPart" id="menuPart1">
-                                <li>Home</li>
+                                <li><a href="dashboard-home.html">Home</a></li>
                             </ul>
                         </li>
                         <li class="menu" id="menu2">Posts
                             <ul class="menuPart" id="menuPart2">
-                                <li>Add</li>
-                                <li>Edit</li>
-                                <li>Delete</li>
+                                <li><a href="dashboard-allpost.html">All Posts</a></li>
+                                <li><a href="dashboard-add.html">Add New</a></li>
                             </ul>
                         </li>
-                        <li class="menu" id="menu3">Dashboard</li>
+                        <li class="menu" id="menu3"><a href="dashboard-comment.html">Comments</a></li>
                     </ul>
                 </div>
                 <div id="dbContent">
                     <div id="allPost">
                         <table>
                             <thead><tr><th id="title">Title</th><th id="author">Author</th><th id="category">Category</th></tr></thead>
-                            <!--<tfoot><tr><th id="title">Title</th><th id="author">Author</th><th id="category">Category</th></tr></tfoot>-->
                             <tbody><tr class="rowtr" id="tr1"><td><strong>title1</strong>
                                         <div class="rowAction" id="ra1">
-                                            <a href="edit.html">Edit</a><a href="">Delete</a>
+                                            <a href="dashboard-edit.html">Edit</a><a href="">Delete</a>
                                         </div></td>
                                     <td>author1</td><td>category1</td></tr>
                                 <tr class="rowtr" id="tr2"><td><strong>title2</strong>
                                         <div class="rowAction" id="ra2">
-                                            <a href="edit.html">Edit</a><a href="">Delete</a>
+                                            <a href="dashboard-edit.html">Edit</a><a href="">Delete</a>
                                         </div></td>
                                     <td>author1</td><td>category1</td></tr>
                             </tbody>

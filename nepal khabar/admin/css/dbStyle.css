@@ -17,30 +17,26 @@ body{
     width: 100%;
 }
 #dbMain #dbHeader{
+    background-color: #A0A0A0;
+    font-size: 21px;
+    padding: 5px;
     width: 100%;
-    height: 100px;
-    background-color: red;
 }
 #dbMain #dbBody{
     width: 100%;
-    min-height: 500px;
-    background-color: blue;
+    min-height: 800px;
 }
-#dbMain #dbFooter{
-    width: 100%;
-    height: 100px;
-    background-color: green;
-}
+
 #dbMain #dbBody #dbSideBar{
     width: 20%;
-    min-height: 500px;
-    background-color: #900;
+    min-height: 800px;
+    background-color: #D0D0D0;
     float: left;
 }
 #dbMain #dbBody #dbContent{
     width: 80%;
-    min-height: 500px;
-    background-color: #C0C0C0;
+    min-height: 800px;
+    background-color: #E0E0E0;
     float: right;
 }
 #dbSideBar ul{
@@ -50,4 +46,22 @@ body{
 }
 #dbSideBar ul li ul{
     display: none;
+}
+#dbSideBar li a{
+    text-decoration: none;
+    color: black;
+}
+
+.menu{
+    width: 100%;
+}
+.menuPart{
+    width: 100%;
+    background-color: #E0E0E0;
+}
+.menuPart li{
+    font-size: 13px;
+}
+.mSelected{
+    background-color: grey;
 }

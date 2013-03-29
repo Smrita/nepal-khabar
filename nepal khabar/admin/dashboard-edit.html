@@ -8,7 +8,7 @@ and open the template in the editor.
         <title>dashboard</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link type="text/css" rel="stylesheet" href="css/dbStyle.css"/>
-        <link type="text/css" rel="stylesheet" href="css/dbHome.css"/>
+        <link type="text/css" rel="stylesheet" href="css/dbAdd.css"/>
         <script src="../js/jquery-1.9.0.min.js"></script>
         <script>
             $(document).ready(function(){
@@ -27,17 +27,6 @@ and open the template in the editor.
                     if(displayValue == "none"){
                         $("#menuPart2").toggle("slow");
                     }
-                });
-            });
-        </script>
-        <script>
-            /*for delete comment*/
-            $(document).ready(function(){
-                $(".rowAction").hover(function(){
-                    var id = $(this).attr("id");
-                    $("#"+id+" a").show();
-                }, function(){
-                    $(".rowAction a").hide();
                 });
             });
         </script>
@@ -63,28 +52,40 @@ and open the template in the editor.
                     </ul>
                 </div>
                 <div id="dbContent">
-                    <div class="homeSubContent" id="total">
-                        <p class="homeHeading">Total</p>
-                        <label>100 posts</label><label>4 comments</label>
-                    </div>
-                    <div class="homeSubContent" id="rComment">
-                        <p class="homeHeading">Recent Comments</p>
-                        <div id="rc">
-                            <div class="rowAction" id="ra1">
-                                <p>From user1 on Post1</p>
-                                <p>this is comment1</p>
-                                <a href="#">Delete</a>
-                            </div>
-                            <div class="rowAction" id="ra2">
-                                <p>From user2 on Post2</p>
-                                <p>this is comment2</p>
-                                <a href="#">Delete</a>
-                            </div>
-                        </div>
+                    <div id="post">
+                        <form method="post" action="" enctype="multipart/form-data">
+                            <label>Edit Post</label><br/>
+                            <p>
+                                <input id="title" type="text" name="title" value="It is original title"/>
+                            </p>
+                            <p>
+                                <input id="author" type="text" name="author" value="author1"/>
+                            </p>
+                            <p>
+                                <textarea id="textContent" name="textContent">this is content1</textarea>
+                            </p>
+                            <p>
+                                <label>Upload Images</label><br/>
+                                <span>Small Image</span><br/>
+                                <input type="file" name="smallPicture"/><br/>
+                                <span>Big Image</span><br/>
+                                <input type="file" name="bigPicture"/>
+                            </p>
+                            <p><label>Choose Category</label> 
+                                <select name="category">
+                                    <option value="entertainment">Entertainment</option>
+                                    <option value="politics" selected="selected">Politics</option>
+                                    <option value="entertainment">Entertainment</option>
+                                    <option value="entertainment">Entertainment</option>
+                                </select>
+                            </p>
+                            <p>
+                                <input type="submit" name="submit" value="Update"/>
+                            </p>
+                        </form>
                     </div>
                 </div>
             </div>
-            <div id="dbFooter"></div>
         </div>
     </body>
 </html>
