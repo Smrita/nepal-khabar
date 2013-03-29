@@ -90,18 +90,35 @@ body
     float: right;
     font-family: 'Patrick Hand',cursive;
     margin: -391px 14px 5px;
-    min-height: 390px;
+    min-height: 370px;
     width: 28%;
-	border:1px dotted #CCC;
+	/*border:1px dotted #CCC;*/
+	box-shadow:1px 1px 5px #CCC;
     
 }
+
 .weatherContent .head {
     
     font-family:'Sintony', sans-serif;
     font-size:17px;
+	
     /*background:rgba(39,191,173,0.1);/*(154,198,211,0.2);*/
     
-}      
+}   
+
+.head img
+{
+	margin:20px;
+	margin-left:30px;
+	box-shadow:1px 1px 2px 1px #CCC;
+}
+
+table
+{
+    border-collapse:collapse;
+    color:gray;
+}
+
 /*#sliderSpace
 {
 	
@@ -358,7 +375,7 @@ h1 small {
 
 .singleLandNews .headingFormat
 {
-	text-align:left;
+	text-align:left; text-decoration: none;
  
 	margin-bottom:20px;
 
@@ -377,6 +394,24 @@ h1 small {
     
     
 }
+#content_left  ul
+{
+    list-style: cross-fade;
+    float: left;
+    
+}
+
+
+#content_left  ul li a 
+{   
+    text-decoration: none;
+    color: #1F1F14;
+}
+#content_left  ul li a:hover 
+{   
+    color: #0000ff;
+}
+
 
 #content_middle
 {
@@ -557,6 +592,11 @@ h1 small {
 	margin:20px auto;
 
 	height:35px;
+}
+table
+{
+    border-collapse:collapse;
+    color:gray;
 }
 
 .sharee
