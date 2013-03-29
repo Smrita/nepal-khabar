@@ -1,0 +1,59 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>dashboard</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link type="text/css" rel="stylesheet" href="css/dbStyle.css"/>
+        <script src="../js/jquery-1.9.0.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#menu1").click(function(){
+                    displayValue = $("#menuPart1").css("display");
+                    $(".menuPart").hide("slow");
+                    
+                    if(displayValue == "none"){
+                        $("#menuPart1").toggle("slow"); 
+                    }
+                    
+                });
+                $("#menu2").click(function(){
+                    displayValue = $("#menuPart2").css("display");
+                    $(".menuPart").hide("slow");
+                    if(displayValue == "none"){
+                        $("#menuPart2").toggle("slow");
+                    }
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div id="dbMain">
+            <div id="dbHeader"></div>
+            <div id="dbBody">
+                <div id="dbSideBar">
+                    <ul>
+                        <li id="menu1">Dashboard
+                            <ul class="menuPart" id="menuPart1">
+                                <li>1a</li>
+                                <li>1b</li>
+                            </ul>
+                        </li>
+                        <li id="menu2">Posts
+                            <ul class="menuPart" id="menuPart2">
+                                <li>Add</li>
+                                <li>Edit</li>
+                                <li>Delete</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div id="dbContent"></div>
+            </div>
+            <div id="dbFooter"></div>
+        </div>
+    </body>
+</html>

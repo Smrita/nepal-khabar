@@ -1,0 +1,53 @@
+/* 
+    Document   : dbStyle
+    Created on : Mar 28, 2013, 12:05:38 PM
+    Author     : ramsharan
+    Description:
+        Purpose of the stylesheet follows.
+*/
+body{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+#dbMain{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    width: 100%;
+}
+#dbMain #dbHeader{
+    width: 100%;
+    height: 100px;
+    background-color: red;
+}
+#dbMain #dbBody{
+    width: 100%;
+    min-height: 500px;
+    background-color: blue;
+}
+#dbMain #dbFooter{
+    width: 100%;
+    height: 100px;
+    background-color: green;
+}
+#dbMain #dbBody #dbSideBar{
+    width: 20%;
+    height: 500px;
+    background-color: #900;
+    float: left;
+}
+#dbMain #dbBody #dbContent{
+    width: 80%;
+    height: 500px;
+    background-color: #C0C0C0;
+    float: right;
+}
+#dbSideBar ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+#dbSideBar ul li ul{
+    display: none;
+}
