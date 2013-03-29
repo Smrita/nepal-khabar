@@ -10,25 +10,10 @@ and open the template in the editor.
         <link type="text/css" rel="stylesheet" href="css/dbStyle.css"/>
         <link type="text/css" rel="stylesheet" href="css/dbAdd.css"/>
         <script src="../js/jquery-1.9.0.min.js"></script>
+        <script src="js/default.js"></script>
         <script>
             $(document).ready(function(){
-                    $("#menuPart2").show();
-                $("#menu1").click(function(){
-                    displayValue = $("#menuPart1").css("display");
-                    $(".menuPart").hide();
-                    
-                    if(displayValue == "none"){
-                        $("#menuPart1").toggle(); 
-                    }
-                    
-                });
-                $("#menu2").click(function(){
-                    displayValue = $("#menuPart2").css("display");
-                    $(".menuPart").hide();
-                    if(displayValue == "none"){
-                        $("#menuPart2").toggle();
-                    }
-                });
+                $("#menuPart2").show();
             });
         </script>
     </head>
