@@ -1,0 +1,87 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>dashboard</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link type="text/css" rel="stylesheet" href="css/dbStyle.css"/>
+        <script src="../js/jquery-1.9.0.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#menu1").click(function(){
+                    displayValue = $("#menuPart1").css("display");
+                    $(".menuPart").hide("slow");
+                    
+                    if(displayValue == "none"){
+                        $("#menuPart1").toggle("slow"); 
+                    }
+                    
+                });
+                $("#menu2").click(function(){
+                    displayValue = $("#menuPart2").css("display");
+                    $(".menuPart").hide("slow");
+                    if(displayValue == "none"){
+                        $("#menuPart2").toggle("slow");
+                    }
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div id="dbMain">
+            <div id="dbHeader"></div>
+            <div id="dbBody">
+                <div id="dbSideBar">
+                    <ul>
+                        <li class="menu" id="menu1">Dashboard
+                            <ul class="menuPart" id="menuPart1">
+                                <li>Home</li>
+                            </ul>
+                        </li>
+                        <li class="menu" id="menu2">Posts
+                            <ul class="menuPart" id="menuPart2">
+                                <li>Add</li>
+                                <li>Edit</li>
+                                <li>Delete</li>
+                            </ul>
+                        </li>
+                        <li class="menu" id="menu3">Dashboard</li>
+                    </ul>
+                </div>
+                <div id="dbContent">
+                    <div id="post">
+                        <form method="post" action="">
+                            <p>
+                                <label>Add New Post</label><br/>
+                                <input id="title" type="text" name="title" placeholder="Enter title here"/>
+                            </p>
+                            <p>
+                                <label>Add Author Name</label><br/>
+                                <input id="author" type="text" name="author" placeholder="Enter author name here"/>
+                            </p>
+                            <p>
+                                <textarea id="textContent" name="textContent"></textarea>
+                            </p>
+                            <p><label>Choose Category</label> 
+                                <select name="category">
+                                    <option value="entertainment">Entertainment</option>
+                                    <option value="politics">Politics</option>
+                                    <option value="entertainment">Entertainment</option>
+                                    <option value="entertainment">Entertainment</option>
+                                </select>
+                            </p>
+                            <p>
+                                <input type="submit" name="submit" value="Save as Draft"/>
+                                <input type="submit" name="submit" value="Publish"/>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div id="dbFooter"></div>
+        </div>
+    </body>
+</html>
